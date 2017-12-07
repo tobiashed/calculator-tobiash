@@ -8,8 +8,14 @@ public class AdvancedCalculator extends BasicCalculator implements CalculatorAdv
 	}
 
 	public double raisedToThePowerOf(double base, double exponent) {
-		return Math.pow(base, exponent);
+		double result = 1;
+		
+		for (int i = 0; i < exponent; i++) {
+			result = base * result;
+		}
+		return result;
 	}
+	
 	
 	public double squareRoot(double number) {
 		return Math.sqrt(number);
@@ -17,5 +23,18 @@ public class AdvancedCalculator extends BasicCalculator implements CalculatorAdv
 	
 	public double remainder(double dividend, double divisor) {
 		return dividend % divisor;
+	}
+	
+	public int factorial(int number){ 
+		if (number == 0) {
+			return 1;
+		} else {
+			return (number * factorial(number - 1));
+			
+		}     
+	}
+	
+	public double cubeRoot(double number) {
+		return Math.cbrt(number);
 	}
 }

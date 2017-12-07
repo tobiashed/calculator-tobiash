@@ -63,6 +63,7 @@ public class MainFrame {
 		textField.setBounds(12, 12, 206, 35);
 		frmCalculator.getContentPane().add(textField);
 		textField.setColumns(10);
+		
 
 		JButton btnPercentage = new JButton("%");
 		btnPercentage.addActionListener(new ActionListener() {
@@ -320,6 +321,10 @@ public class MainFrame {
 					result = bc.division(firstNumber, secondNumber);
 					answer = String.valueOf(df.format(result));
 					textField.setText(answer);
+				}else if (operations == "%") { 
+				    result = (firstNumber * 100/ secondNumber);
+				    answer = String.valueOf(df.format(result));
+				    textField.setText(answer);
 				}
 			}
 		});

@@ -5,4 +5,7 @@ public interface CalculatorAdvancedOperationsInterface {
 	public double raisedToThePowerOf(double base, double exponent);
 	public double squareRoot(double number);
 	public double remainder(double dividend, double divisor);
+	public int factorial(int number);
+	public double cubeRoot(double number);
+	
 }
