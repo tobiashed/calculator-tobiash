@@ -4,37 +4,48 @@ import com.final_project.calculator_tobiash.interfaces.CalculatorAdvancedOperati
 
 public class AdvancedCalculator extends BasicCalculator implements CalculatorAdvancedOperationsInterface {
 	public double square(double number) {
-		return number * number;
+		double result = 0;
+		result = number * number;
+		return result;
 	}
 
 	public double raisedToThePowerOf(double base, double exponent) {
-		double result = 1;
-		
-		for (int i = 0; i < exponent; i++) {
-			result = base * result;
-		}
+		double result = 0;
+		result = Math.pow(base, exponent);
 		return result;
 	}
 	
 	
 	public double squareRoot(double number) {
-		return Math.sqrt(number);
+		double result = 0;
+		result = Math.sqrt(number);
+		return result;
 	}
 	
 	public double remainder(double dividend, double divisor) {
-		return dividend % divisor;
+		double result = 0;
+		result = dividend % divisor;
+		return result;
 	}
 	
-	public int factorial(int number){ 
-		if (number == 0) {
-			return 1;
+	public double factorial(double number){ 
+		double result = 0;
+		if (number == 0){
+			result = 1;
+			return result;
+		} else if(number < 0){
+			return -0.123456789;
 		} else {
-			return (number * factorial(number - 1));
+		
+			result = (number * factorial(number - 1));
+			return result;
 			
 		}     
 	}
 	
 	public double cubeRoot(double number) {
-		return Math.cbrt(number);
+		double result = 0;
+		result = Math.cbrt(number);
+		return result;
 	}
 }
