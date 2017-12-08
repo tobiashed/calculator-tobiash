@@ -23,6 +23,8 @@ public class MainFrame {
 	String answer;
 
 	BasicCalculator bc = new BasicCalculator();
+	AdvancedCalculator ac = new AdvancedCalculator();
+	DecimalFormat df = new DecimalFormat("#.##########");
 
 	/**
 	 * Launch the application.
@@ -53,29 +55,31 @@ public class MainFrame {
 	private void initialize() {
 		frmCalculator = new JFrame();
 		frmCalculator.setTitle("Calculator");
-		frmCalculator.setBounds(100, 100, 259, 369);
+		frmCalculator.setBounds(100, 100, 293, 342);
 		frmCalculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmCalculator.getContentPane().setLayout(null);
-
+		frmCalculator.setVisible(true);
+		
 		textField = new JTextField();
 		textField.setFont(new Font("Dialog", Font.BOLD, 18));
 		textField.setHorizontalAlignment(SwingConstants.RIGHT);
-		textField.setBounds(12, 12, 206, 35);
+		textField.setBounds(12, 12, 259, 35);
 		frmCalculator.getContentPane().add(textField);
 		textField.setColumns(10);
 		
+		
 
-		JButton btnPercentage = new JButton("%");
-		btnPercentage.addActionListener(new ActionListener() {
+		JButton btnRemainder = new JButton("%");
+		btnRemainder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				firstNumber = Double.parseDouble(textField.getText());
 				textField.setText("");
 				operations = "%";
 			}
 		});
-		btnPercentage.setFont(new Font("Dialog", Font.BOLD, 14));
-		btnPercentage.setBounds(12, 47, 50, 50);
-		frmCalculator.getContentPane().add(btnPercentage);
+		btnRemainder.setFont(new Font("Dialog", Font.BOLD, 14));
+		btnRemainder.setBounds(12, 47, 50, 50);
+		frmCalculator.getContentPane().add(btnRemainder);
 
 		JButton btnClear = new JButton("C");
 		btnClear.addActionListener(new ActionListener() {
@@ -103,17 +107,30 @@ public class MainFrame {
 		btnBackspace.setBounds(116, 47, 50, 50);
 		frmCalculator.getContentPane().add(btnBackspace);
 
-		JButton btnDivision = new JButton("/");
+		JButton btnDivision = new JButton("\u00f7");
 		btnDivision.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				firstNumber = Double.parseDouble(textField.getText());
 				textField.setText("");
-				operations = "/";
+				operations = "\u00f7";
 			}
 		});
 		btnDivision.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnDivision.setBounds(168, 47, 50, 50);
 		frmCalculator.getContentPane().add(btnDivision);
+		
+		JButton btnSquare = new JButton("x\u00B2");
+		btnSquare.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				df.setMaximumFractionDigits(10);
+				double action = Double.parseDouble(String.valueOf(textField.getText()));
+				action = ac.square(action);
+				textField.setText(String.valueOf(df.format(action)));
+			}
+		});
+		btnSquare.setFont(new Font("Dialog", Font.BOLD, 14));
+		btnSquare.setBounds(220, 47, 50, 50);
+		frmCalculator.getContentPane().add(btnSquare);
 
 		JButton btn7 = new JButton("7");
 		btn7.addActionListener(new ActionListener() {
@@ -149,17 +166,29 @@ public class MainFrame {
 		btn9.setBounds(116, 99, 50, 50);
 		frmCalculator.getContentPane().add(btn9);
 
-		JButton btnMultiplication = new JButton("*");
+		JButton btnMultiplication = new JButton("\u00d7");
 		btnMultiplication.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				firstNumber = Double.parseDouble(textField.getText());
 				textField.setText("");
-				operations = "*";
+				operations = "\u00d7";
 			}
 		});
 		btnMultiplication.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnMultiplication.setBounds(168, 99, 50, 50);
 		frmCalculator.getContentPane().add(btnMultiplication);
+		
+		JButton btnRaisedttpo = new JButton("x\u207f");
+		btnRaisedttpo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				firstNumber = Double.parseDouble(textField.getText());
+				textField.setText("");
+				operations = "x\u207f";
+			}
+		});
+		btnRaisedttpo.setFont(new Font("Dialog", Font.BOLD, 14));
+		btnRaisedttpo.setBounds(220, 99, 50, 50);
+		frmCalculator.getContentPane().add(btnRaisedttpo);
 
 		JButton btn4 = new JButton("4");
 		btn4.addActionListener(new ActionListener() {
@@ -207,6 +236,19 @@ public class MainFrame {
 		btnMinus.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnMinus.setBounds(168, 151, 50, 50);
 		frmCalculator.getContentPane().add(btnMinus);
+		
+		JButton btnSquareRoot = new JButton("\u221a");
+		btnSquareRoot.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				df.setMaximumFractionDigits(10);
+				double action = Double.parseDouble(String.valueOf(textField.getText()));
+				action = ac.squareRoot(action);
+				textField.setText(String.valueOf(df.format(action)));
+			}
+		});
+		btnSquareRoot.setFont(new Font("Dialog", Font.BOLD, 18));
+		btnSquareRoot.setBounds(220, 151, 50, 50);
+		frmCalculator.getContentPane().add(btnSquareRoot);
 
 		JButton btn1 = new JButton("1");
 		btn1.addActionListener(new ActionListener() {
@@ -255,11 +297,23 @@ public class MainFrame {
 		btnPlus.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnPlus.setBounds(168, 203, 50, 50);
 		frmCalculator.getContentPane().add(btnPlus);
-
+		
+		JButton btnCubeRoot = new JButton("\u221b");
+		btnCubeRoot.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				df.setMaximumFractionDigits(10);
+				double action = Double.parseDouble(String.valueOf(textField.getText()));
+				action = ac.cubeRoot(action);
+				textField.setText(String.valueOf(df.format(action)));
+			}
+		});
+		btnCubeRoot.setFont(new Font("Dialog", Font.BOLD, 18));
+		btnCubeRoot.setBounds(220, 203, 50, 50);
+		frmCalculator.getContentPane().add(btnCubeRoot);
+		
 		JButton btnPlusMinus = new JButton("\u00B1");
 		btnPlusMinus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				DecimalFormat df = new DecimalFormat("#.##########");
 				df.setMaximumFractionDigits(10);
 				double action = Double.parseDouble(String.valueOf(textField.getText()));
 				action = action * (-1);
@@ -298,7 +352,6 @@ public class MainFrame {
 		JButton btnEquals = new JButton("=");
 		btnEquals.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				DecimalFormat df = new DecimalFormat("#.##########");
 				df.setMaximumFractionDigits(10);
 				secondNumber = Double.parseDouble(textField.getText());
 
@@ -312,25 +365,43 @@ public class MainFrame {
 					answer = String.valueOf(df.format(result));
 					textField.setText(answer);
 					
-				}else if (operations == "*") {
+				}else if (operations == "\u00d7") {
 					result = bc.multiplication(firstNumber, secondNumber);
 					answer = String.valueOf(df.format(result));
 					textField.setText(answer);
 					
-				}else if (operations == "/") {
+				}else if (operations == "\u00f7") {
 					result = bc.division(firstNumber, secondNumber);
 					answer = String.valueOf(df.format(result));
 					textField.setText(answer);
+					
 				}else if (operations == "%") { 
-				    result = (firstNumber * 100/ secondNumber);
+				    result = ac.remainder(firstNumber, secondNumber);
 				    answer = String.valueOf(df.format(result));
 				    textField.setText(answer);
-				}
+				    
+				}else if (operations == "x\u207f") { 
+			    result = ac.raisedToThePowerOf(firstNumber, secondNumber);
+			    answer = String.valueOf(df.format(result));
+			    textField.setText(answer);
+			}
 			}
 		});
 		btnEquals.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnEquals.setBounds(168, 255, 50, 50);
 		frmCalculator.getContentPane().add(btnEquals);
-
+		
+		JButton btnFactorial = new JButton("n!");
+		btnFactorial.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				df.setMaximumFractionDigits(10);
+				double action = Double.parseDouble(String.valueOf(textField.getText()));
+				action = ac.factorial(action);
+				textField.setText(String.valueOf(df.format(action)));
+			}
+		});
+		btnFactorial.setFont(new Font("Dialog", Font.BOLD, 14));
+		btnFactorial.setBounds(220, 255, 50, 50);
+		frmCalculator.getContentPane().add(btnFactorial);
 	}
 }
