@@ -16,108 +16,304 @@ public class AdvancedCalculatorTest {
 	AdvancedCalculator ac = new AdvancedCalculator();
 	Random random = new Random();
 	DecimalFormat df = new DecimalFormat("#.##");
-	
-	public double powerOf(double base, double exponent) {       
-             double result = 1;
-             
-             for(int i=0; i<exponent; i++) {
-                      result = base * result;
-             }
-             return result;
-    } 
-	public int factorial(int number){ 
+	 
+	public double factorial(double number){ 
 		if (number == 0) {
 			return 1;
-		} else {
+		} else if (number < 0) {
+			return -0.123456789;
+		}else {
 			return (number * factorial(number - 1));
 		}     
 	}
 	
 	@Test
-	public void testSquareSmallSizedPositiveNumbers() {
+	public void testSquarePositiveNumbers() {
 		double firstNumber = 0;
 		double result = 0;
 		
-		for(int i = 0;i<200;i++) {
-			firstNumber = Double.valueOf(df.format(random.nextDouble()*10));
+		for(int i = 0;i<50;i++) {
+			firstNumber = Double.valueOf(df.format(random.nextDouble()*100));
 			result = firstNumber * firstNumber;
 			
-			LOG.info("Testing the method with: "+ firstNumber);
+			LOG.info("Testing the method square with: "+ firstNumber);
 			assertEquals(Math.round(result), Math.round(ac.square(firstNumber)));
 			
 		}
 	}
 	@Test
-	public void testRaisedttpoSmallSizedPositiveNumbers() {
-		double base = 0;
-		double exponent = 0;
-		double result = 0;
+	public void testSquareZeros() {
+		double firstNumber = 0;
+		double result = 0.0;
 		
-		for(int i = 0;i<200;i++) {
-			base = Double.valueOf(df.format(random.nextDouble()*10));
-			exponent = Double.valueOf(df.format(random.nextDouble()*10));
-			result = powerOf(base, exponent);
-				
-			LOG.info("Testing the method with base: "+ base + " and exponent: " + exponent);
-			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+		for(int i = 0;i<50;i++) {
+			
+			LOG.info("Testing the method square with: "+ firstNumber);
+			assertEquals(Math.round(result), Math.round(ac.square(firstNumber)));
 			
 		}
 	}
 	@Test
-	public void testSquareRootSmallSizedPositiveNumbers() {
-		double number = 0;
+	public void testSquareNegativeNumbers() {
+		double firstNumber = 0;
 		double result = 0;
 		
-		for(int i = 0;i<200;i++) {
-			number = Double.valueOf(df.format(random.nextDouble()*10));
-			result = Math.sqrt(number);
+		for(int i = 0;i<50;i++) {
+			firstNumber = Double.valueOf(df.format(random.nextDouble()*-100));
+			result = firstNumber * firstNumber;
 			
-			LOG.info("Testing the method with: "+ number);
-			assertEquals(Math.round(result), Math.round(ac.squareRoot(number)));
-			
-		}
-	}
-	@Test
-	public void testRemainderSmallSizedPositiveNumbers() {
-		double dividend = 0;
-		double divisor = 0;
-		double result = 0;
-		
-		for(int i = 0;i<200;i++) {
-			dividend = Double.valueOf(df.format(random.nextDouble()*10));
-			divisor = Double.valueOf(df.format(random.nextDouble()*10));
-			result = dividend % divisor;
-			
-			LOG.info("Testing the method with: " + dividend + " and " + divisor);
-			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
-			
-		}
-	}
-	@Test
-	public void testfactorialSmallSizedPositiveNumbers() {
-		int number = 0;
-		int result = 0;
-		
-		for(int i = 0;i<200;i++) {
-			number = Integer.valueOf(random.nextInt(11)+1);
-			result = (number * factorial(number - 1));
-			
-			LOG.info("Testing the method with: " + number);
-			assertEquals(result, ac.factorial(number));
+			LOG.info("Testing the method square with: "+ firstNumber);
+			assertEquals(Math.round(result), Math.round(ac.square(firstNumber)));
 			
 		}
 	}
 	
 	@Test
-	public void testCubeRootSmallSizedPositiveNumbers() {
+	public void testRaisedttpoPositiveNumbers() {
+		double base = 0;
+		double exponent = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			base = Double.valueOf(df.format(random.nextDouble()*100));
+			exponent = Double.valueOf(df.format(random.nextDouble()*100));
+			result = Math.pow(base, exponent);
+				
+			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
+			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+			
+		}
+	}
+	@Test
+	public void testRaisedttpoZeros() {
+		double base = 0;
+		double exponent = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			// testing with both base and exponent number as zero
+			result = Math.pow(base, exponent);
+				
+			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
+			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+			
+			// testing with only base as zero
+			base = 0;
+			exponent = Double.valueOf(df.format(random.nextDouble()*100));
+			result = Math.pow(base, exponent);
+				
+			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
+			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+			
+			// testing with only exponent as zero
+			base = Double.valueOf(df.format(random.nextDouble()*100));
+			exponent = 0;
+			result = Math.pow(base, exponent);
+				
+			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
+			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+		}
+	}
+	@Test
+	public void testRaisedttpoNegativeNumbers() {
+		double base = 0;
+		double exponent = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			base = Double.valueOf(df.format(random.nextDouble()*-100));
+			exponent = Double.valueOf(df.format(random.nextDouble()*-100));
+			result = Math.pow(base, exponent);
+				
+			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
+			assertEquals(Math.round(result), Math.round(ac.raisedToThePowerOf(base, exponent)));
+			
+		}
+	}
+	@Test
+	public void testSquareRootPositiveNumbers() {
 		double number = 0;
 		double result = 0;
 		
-		for(int i = 0;i<200;i++) {
-			number = Double.valueOf(df.format(random.nextDouble()*10));
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(df.format(random.nextDouble()*100));
+			result = Math.sqrt(number);
+			
+			LOG.info("Testing the method squareRoot with: "+ number);
+			assertEquals(Math.round(result), Math.round(ac.squareRoot(number)));
+			
+		}
+	}
+	@Test
+	public void testSquareRootZero() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			result = Math.sqrt(number);
+			
+			LOG.info("Testing the method squareRoot with: "+ number);
+			assertEquals(Math.round(result), Math.round(ac.squareRoot(number)));
+			
+		}
+	}
+	@Test
+	public void testSquareRootNegativeNumbers() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(df.format(random.nextDouble()*-100));
+			result = Math.sqrt(number);
+			
+			LOG.info("Testing the method squareRoot with: "+ number);
+			assertEquals(Math.round(result), Math.round(ac.squareRoot(number)));
+			
+		}
+	}
+	@Test
+	public void testRemainderPositiveNumbers() {
+		double dividend = 0;
+		double divisor = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			dividend = Double.valueOf(df.format(random.nextDouble()*100));
+			divisor = Double.valueOf(df.format(random.nextDouble()*100));
+			result = dividend % divisor;
+			
+			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
+			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
+			
+		}
+	}
+	@Test
+	public void testRemainderZeros() {
+		double dividend = 0;
+		double divisor = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			// testing with both dividend and divisor as zero
+			result = dividend % divisor;
+			
+			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
+			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
+			
+			// testing with only dividend as zero
+			dividend = 0;
+			divisor = Double.valueOf(df.format(random.nextDouble()*100));
+			result = dividend % divisor;
+			
+			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
+			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
+			
+			// testing with only divisor as zero
+			dividend = Double.valueOf(df.format(random.nextDouble()*100));
+			divisor = 0;
+			result = dividend % divisor;
+			
+			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
+			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
+			
+		}
+	}
+	@Test
+	public void testRemainderNegativeNumbers() {
+		double dividend = 0;
+		double divisor = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			dividend = Double.valueOf(df.format(random.nextDouble()*-100));
+			divisor = Double.valueOf(df.format(random.nextDouble()*-100));
+			result = dividend % divisor;
+			
+			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
+			assertEquals(Math.round(result), Math.round(ac.remainder(dividend, divisor)));
+			
+		}
+	}
+	@Test
+	public void testfactorialPositiveNumbers() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(random.nextDouble()*10);
+			result = factorial(number);
+			
+			LOG.info("Testing the method factorial with: " + number);
+			assertEquals(result, ac.factorial(number), 0);
+			
+		}
+	}
+	@Test
+	public void testfactorialZero() {
+		double number = 0;
+		double result = 1;
+		
+		for(int i = 0;i<50;i++) {
+			result = factorial(number);			
+			LOG.info("Testing the method factorial with: " + number);
+			assertEquals(result, ac.factorial(number), 0);
+			
+		}
+	}
+	@Test
+	public void testfactorialNegativeNumbers() {
+		double number = 0;
+		double result = -0.123456789;
+		
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(random.nextDouble()*-10);
+			
+			
+			LOG.info("Testing the method factorial with: " + number);
+			assertEquals(result, ac.factorial(number), 0);
+			
+		}
+	}
+	
+	@Test
+	public void testCubeRootPositiveNumbers() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(df.format(random.nextDouble()*100));
 			result = Math.cbrt(number);
 			
-			LOG.info("Testing the method with: " + number);
+			LOG.info("Testing the method cubeRoot with: " + number);
+			assertEquals(Math.round(result), Math.round(ac.cubeRoot(number)));
+			
+		}
+	}
+	
+	@Test
+	public void testCubeRootZero() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			result = Math.cbrt(number);
+			
+			LOG.info("Testing the method cubeRoot with: " + number);
+			assertEquals(Math.round(result), Math.round(ac.cubeRoot(number)));
+			
+		}
+	}
+	
+	@Test
+	public void testCubeRootNegativeNumbers() {
+		double number = 0;
+		double result = 0;
+		
+		for(int i = 0;i<50;i++) {
+			number = Double.valueOf(df.format(random.nextDouble()*-100));
+			result = Math.cbrt(number);
+			
+			LOG.info("Testing the method cubeRoot with: " + number);
 			assertEquals(Math.round(result), Math.round(ac.cubeRoot(number)));
 			
 		}
