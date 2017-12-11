@@ -1,5 +1,13 @@
 package com.final_project.calculator_tobiash.interfaces;
-
+/**
+ * 
+ * Interface CalculatorAdvancedOperations. 
+ *  
+ * 
+ *@author Tobias Hedkvist
+ *@version 1.0 
+ * 
+ **/
 public interface CalculatorAdvancedOperationsInterface {
 	public double square(double number);
 	public double raisedToThePowerOf(double base, double exponent);

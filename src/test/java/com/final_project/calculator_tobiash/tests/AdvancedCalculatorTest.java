@@ -10,13 +10,28 @@ import org.junit.Test;
 
 import com.final_project.calculator_tobiash.classes.AdvancedCalculator;
 import com.final_project.calculator_tobiash.classes.BasicCalculator;
-
+/**
+ * 
+ * Class AdvancedCalculatorTest.
+ * Test cases for the methods in class AdvancedCalculator. 
+ *  
+ * 
+ *@author Tobias Hedkvist
+ *@version 1.0 
+ * 
+ **/
 public class AdvancedCalculatorTest {
 	private static final Logger LOG = Logger.getLogger(AdvancedCalculator.class.getName());
 	AdvancedCalculator ac = new AdvancedCalculator();
 	Random random = new Random();
 	DecimalFormat df = new DecimalFormat("#.##");
-	 
+	
+	/**
+	 * Factorial- calculate factorial of a number.
+	 * @param number : the number as a double
+	 * 
+	 * @return: the result of the operation.
+	 * */
 	public double factorial(double number){ 
 		if (number == 0) {
 			return 1;
@@ -92,6 +107,8 @@ public class AdvancedCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both base and exponent number as zero
+			base = 0;
+			exponent = 0;
 			result = Math.pow(base, exponent);
 				
 			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
@@ -195,6 +212,8 @@ public class AdvancedCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both dividend and divisor as zero
+			dividend = 0;
+			divisor = 0;
 			result = dividend % divisor;
 			
 			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
