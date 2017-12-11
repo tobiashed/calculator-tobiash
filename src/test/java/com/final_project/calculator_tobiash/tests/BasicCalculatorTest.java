@@ -9,7 +9,16 @@ import java.util.logging.Logger;
 import org.junit.Test;
 
 import com.final_project.calculator_tobiash.classes.BasicCalculator;
-
+/**
+ * 
+ * Class BasicCalculatorTest.
+ * Test cases for the methods in class BasicCalculator. 
+ *  
+ * 
+ *@author Tobias Hedkvist
+ *@version 1.0 
+ * 
+ **/
 public class BasicCalculatorTest {
 
 	private static final Logger LOG = Logger.getLogger(BasicCalculator.class.getName());
