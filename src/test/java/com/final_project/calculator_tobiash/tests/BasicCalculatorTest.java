@@ -52,6 +52,8 @@ public class BasicCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both first and second number as zero
+			firstNumber = 0;
+			secondNumber = 0;
 			result = firstNumber + secondNumber;
 			
 			LOG.info("Testing the method addition with: "+ firstNumber +" and " + secondNumber);
@@ -117,6 +119,8 @@ public class BasicCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with first and second number as zero
+			firstNumber = 0;
+			secondNumber = 0;
 			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method subtraction with: "+ firstNumber +" and " + secondNumber);
@@ -182,6 +186,8 @@ public class BasicCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both first and second number as zero
+			firstNumber = 0;
+			secondNumber = 0;
 			result = firstNumber * secondNumber;
 			
 			LOG.info("Testing the method multiplication with: "+ firstNumber +" and " + secondNumber);
@@ -246,6 +252,8 @@ public class BasicCalculatorTest {
 
 		for (int i = 0; i < 50; i++) {
 			// testing with both first and second number as zero
+			firstNumber = 0;
+			secondNumber = 0;
 			result = -0.123456789;
 
 			LOG.info("Testing the method division with: " + firstNumber + " and " + secondNumber);

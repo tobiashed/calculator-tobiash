@@ -107,6 +107,8 @@ public class AdvancedCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both base and exponent number as zero
+			base = 0;
+			exponent = 0;
 			result = Math.pow(base, exponent);
 				
 			LOG.info("Testing the method raisedToThePowerOf with base: "+ base + " and exponent: " + exponent);
@@ -210,6 +212,8 @@ public class AdvancedCalculatorTest {
 		
 		for(int i = 0;i<50;i++) {
 			// testing with both dividend and divisor as zero
+			dividend = 0;
+			divisor = 0;
 			result = dividend % divisor;
 			
 			LOG.info("Testing the method remainder with: " + dividend + " and " + divisor);
