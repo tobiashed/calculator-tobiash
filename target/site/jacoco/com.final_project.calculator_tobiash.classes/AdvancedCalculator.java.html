@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AdvancedCalculator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-tobiash</a> &gt; <a href="index.source.html" class="el_package">com.final_project.calculator_tobiash.classes</a> &gt; <span class="el_source">AdvancedCalculator.java</span></div><h1>AdvancedCalculator.java</h1><pre class="source lang-java linenums">package com.final_project.calculator_tobiash.classes;
+
+import com.final_project.calculator_tobiash.interfaces.CalculatorAdvancedOperationsInterface;
+/**
+ * 
+ * Class AdvancedCalculator. Extends BasicCalculator.
+ * An implementation of an advanced calculator. 
+ * includes six advanced operations in arithmetics. The methods
+ * requires double as parameters and returns a double value.
+ *  
+ * 
+ *@author Tobias Hedkvist
+ *@version 1.0 
+ * 
+ **/
+<span class="fc" id="L16">public class AdvancedCalculator extends BasicCalculator implements CalculatorAdvancedOperationsInterface {</span>
+	
+	/**
+	 * Square- calculate square of a number.
+	 * @param number : the number as a double
+	 * 
+	 * @return: the result of the square.
+	 * */
+	public double square(double number) {
+<span class="fc" id="L25">		double result = 0;</span>
+<span class="fc" id="L26">		result = number * number;</span>
+<span class="fc" id="L27">		return result;</span>
+	}
+	/**
+	 * Raised to the power of- base raised to the power of exponent.
+	 * @param base : the first number as a double
+	 * @param exponent: the second number as a double
+	 * 
+	 * @return: the result of the operation.
+	 * */
+	public double raisedToThePowerOf(double base, double exponent) {
+<span class="fc" id="L37">		double result = 0;</span>
+<span class="fc" id="L38">		result = Math.pow(base, exponent);</span>
+<span class="fc" id="L39">		return result;</span>
+	}
+	
+	/**
+	 * Square root- calculate square root of a number.
+	 * @param number : the number as a double
+	 * 
+	 * @return: the result of the square root.
+	 * */
+	public double squareRoot(double number) {
+<span class="fc" id="L49">		double result = 0;</span>
+<span class="fc" id="L50">		result = Math.sqrt(number);</span>
+<span class="fc" id="L51">		return result;</span>
+	}
+	/**
+	 * Remainder- the rest of a division.
+	 * @param dividend : the first number as a double
+	 * @param divisor: the second number as a double
+	 * 
+	 * @return: the result of the operation.
+	 * */
+	public double remainder(double dividend, double divisor) {
+<span class="fc" id="L61">		double result = 0;</span>
+<span class="fc" id="L62">		result = dividend % divisor;</span>
+<span class="fc" id="L63">		return result;</span>
+	}
+	/**
+	 * Factorial- calculate factorial of a number.
+	 * @param number : the number as a double
+	 * 
+	 * @return: the result of the operation.
+	 * */
+	public double factorial(double number){ 
+<span class="fc" id="L72">		double result = 0;</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">		if (number == 0){</span>
+<span class="fc" id="L74">			result = 1;</span>
+<span class="fc" id="L75">			return result;</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">		} else if(number &lt; 0){</span>
+<span class="fc" id="L77">			return -0.123456789;</span>
+		} else {
+		
+<span class="fc" id="L80">			result = (number * factorial(number - 1));</span>
+<span class="fc" id="L81">			return result;</span>
+			
+		}     
+	}
+	/**
+	 * Cube root- calculate cube root of a number.
+	 * @param number : the number as a double
+	 * 
+	 * @return: the result of the cube root.
+	 * */
+	public double cubeRoot(double number) {
+<span class="fc" id="L92">		double result = 0;</span>
+<span class="fc" id="L93">		result = Math.cbrt(number);</span>
+<span class="fc" id="L94">		return result;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

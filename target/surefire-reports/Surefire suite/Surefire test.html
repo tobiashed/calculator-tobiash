@@ -1,0 +1,229 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 14 10:24:48 CET 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1553 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testAddNegativeNumbers()'><b>testAddNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testAddPositiveNumbers()'><b>testAddPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testAddZeros()'><b>testAddZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testCubeRootNegativeNumbers()'><b>testCubeRootNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testCubeRootNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testCubeRootPositiveNumbers()'><b>testCubeRootPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testCubeRootPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testCubeRootZero()'><b>testCubeRootZero</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testCubeRootZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testDivideNegativeNumbers()'><b>testDivideNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testDivideNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testDividePositiveNumbers()'><b>testDividePositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testDividePositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testDivideZeros()'><b>testDivideZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testDivideZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testMultiplyNegativeNumbers()'><b>testMultiplyNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testMultiplyPositiveNumbers()'><b>testMultiplyPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testMultiplyZeros()'><b>testMultiplyZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRaisedttpoNegativeNumbers()'><b>testRaisedttpoNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaisedttpoNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRaisedttpoPositiveNumbers()'><b>testRaisedttpoPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaisedttpoPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRaisedttpoZeros()'><b>testRaisedttpoZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaisedttpoZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRemainderNegativeNumbers()'><b>testRemainderNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRemainderNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRemainderPositiveNumbers()'><b>testRemainderPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRemainderPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testRemainderZeros()'><b>testRemainderZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRemainderZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquareNegativeNumbers()'><b>testSquareNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquarePositiveNumbers()'><b>testSquarePositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquarePositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquareRootNegativeNumbers()'><b>testSquareRootNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRootNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquareRootPositiveNumbers()'><b>testSquareRootPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRootPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquareRootZero()'><b>testSquareRootZero</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRootZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testSquareZeros()'><b>testSquareZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testSubtractNegativeNumbers()'><b>testSubtractNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testSubtractPositiveNumbers()'><b>testSubtractPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.BasicCalculatorTest.testSubtractZeros()'><b>testSubtractZeros</b><br>Test class: com.final_project.calculator_tobiash.tests.BasicCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testfactorialNegativeNumbers()'><b>testfactorialNegativeNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testfactorialNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testfactorialPositiveNumbers()'><b>testfactorialPositiveNumbers</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testfactorialPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest.testfactorialZero()'><b>testfactorialZero</b><br>Test class: com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testfactorialZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)</td></tr>
+</table><p>
+</body>
+</html>

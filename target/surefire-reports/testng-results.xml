@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="30" passed="30">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="1553" started-at="2017-12-14T09:24:48Z" finished-at="2017-12-14T09:24:49Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="1553" started-at="2017-12-14T09:24:48Z" finished-at="2017-12-14T09:24:49Z">
+      <class name="com.final_project.calculator_tobiash.tests.BasicCalculatorTest">
+        <test-method status="PASS" signature="testDivideZeros()[pri:0, instance:testDivideZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testDivideZeros" duration-ms="346" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideZeros -->
+        <test-method status="PASS" signature="testMultiplyPositiveNumbers()[pri:0, instance:testMultiplyPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testMultiplyPositiveNumbers" duration-ms="58" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyPositiveNumbers -->
+        <test-method status="PASS" signature="testMultiplyNegativeNumbers()[pri:0, instance:testMultiplyNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testMultiplyNegativeNumbers" duration-ms="74" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyNegativeNumbers -->
+        <test-method status="PASS" signature="testAddZeros()[pri:0, instance:testAddZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testAddZeros" duration-ms="106" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddZeros -->
+        <test-method status="PASS" signature="testAddPositiveNumbers()[pri:0, instance:testAddPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testAddPositiveNumbers" duration-ms="27" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddPositiveNumbers -->
+        <test-method status="PASS" signature="testAddNegativeNumbers()[pri:0, instance:testAddNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testAddNegativeNumbers" duration-ms="33" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNegativeNumbers -->
+        <test-method status="PASS" signature="testDividePositiveNumbers()[pri:0, instance:testDividePositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testDividePositiveNumbers" duration-ms="48" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDividePositiveNumbers -->
+        <test-method status="PASS" signature="testDivideNegativeNumbers()[pri:0, instance:testDivideNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testDivideNegativeNumbers" duration-ms="26" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideNegativeNumbers -->
+        <test-method status="PASS" signature="testSubtractPositiveNumbers()[pri:0, instance:testSubtractPositiveNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testSubtractPositiveNumbers" duration-ms="11" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractPositiveNumbers -->
+        <test-method status="PASS" signature="testSubtractNegativeNumbers()[pri:0, instance:testSubtractNegativeNumbers(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testSubtractNegativeNumbers" duration-ms="24" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractNegativeNumbers -->
+        <test-method status="PASS" signature="testMultiplyZeros()[pri:0, instance:testMultiplyZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testMultiplyZeros" duration-ms="81" started-at="2017-12-14T10:24:48Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyZeros -->
+        <test-method status="PASS" signature="testSubtractZeros()[pri:0, instance:testSubtractZeros(com.final_project.calculator_tobiash.tests.BasicCalculatorTest)]" name="testSubtractZeros" duration-ms="120" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractZeros -->
+      </class> <!-- com.final_project.calculator_tobiash.tests.BasicCalculatorTest -->
+      <class name="com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest">
+        <test-method status="PASS" signature="testSquarePositiveNumbers()[pri:0, instance:testSquarePositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquarePositiveNumbers" duration-ms="19" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquarePositiveNumbers -->
+        <test-method status="PASS" signature="testSquareNegativeNumbers()[pri:0, instance:testSquareNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquareNegativeNumbers" duration-ms="11" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareNegativeNumbers -->
+        <test-method status="PASS" signature="testSquareRootZero()[pri:0, instance:testSquareRootZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquareRootZero" duration-ms="16" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRootZero -->
+        <test-method status="PASS" signature="testSquareRootPositiveNumbers()[pri:0, instance:testSquareRootPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquareRootPositiveNumbers" duration-ms="14" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRootPositiveNumbers -->
+        <test-method status="PASS" signature="testSquareRootNegativeNumbers()[pri:0, instance:testSquareRootNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquareRootNegativeNumbers" duration-ms="15" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRootNegativeNumbers -->
+        <test-method status="PASS" signature="testCubeRootPositiveNumbers()[pri:0, instance:testCubeRootPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testCubeRootPositiveNumbers" duration-ms="7" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCubeRootPositiveNumbers -->
+        <test-method status="PASS" signature="testSquareZeros()[pri:0, instance:testSquareZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testSquareZeros" duration-ms="20" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareZeros -->
+        <test-method status="PASS" signature="testCubeRootNegativeNumbers()[pri:0, instance:testCubeRootNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testCubeRootNegativeNumbers" duration-ms="27" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCubeRootNegativeNumbers -->
+        <test-method status="PASS" signature="testRaisedttpoPositiveNumbers()[pri:0, instance:testRaisedttpoPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRaisedttpoPositiveNumbers" duration-ms="11" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaisedttpoPositiveNumbers -->
+        <test-method status="PASS" signature="testRaisedttpoNegativeNumbers()[pri:0, instance:testRaisedttpoNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRaisedttpoNegativeNumbers" duration-ms="31" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaisedttpoNegativeNumbers -->
+        <test-method status="PASS" signature="testRaisedttpoZeros()[pri:0, instance:testRaisedttpoZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRaisedttpoZeros" duration-ms="99" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaisedttpoZeros -->
+        <test-method status="PASS" signature="testRemainderPositiveNumbers()[pri:0, instance:testRemainderPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRemainderPositiveNumbers" duration-ms="24" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemainderPositiveNumbers -->
+        <test-method status="PASS" signature="testRemainderZeros()[pri:0, instance:testRemainderZeros(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRemainderZeros" duration-ms="48" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemainderZeros -->
+        <test-method status="PASS" signature="testRemainderNegativeNumbers()[pri:0, instance:testRemainderNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testRemainderNegativeNumbers" duration-ms="13" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemainderNegativeNumbers -->
+        <test-method status="PASS" signature="testCubeRootZero()[pri:0, instance:testCubeRootZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testCubeRootZero" duration-ms="24" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCubeRootZero -->
+        <test-method status="PASS" signature="testfactorialPositiveNumbers()[pri:0, instance:testfactorialPositiveNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testfactorialPositiveNumbers" duration-ms="17" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfactorialPositiveNumbers -->
+        <test-method status="PASS" signature="testfactorialNegativeNumbers()[pri:0, instance:testfactorialNegativeNumbers(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testfactorialNegativeNumbers" duration-ms="37" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfactorialNegativeNumbers -->
+        <test-method status="PASS" signature="testfactorialZero()[pri:0, instance:testfactorialZero(com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest)]" name="testfactorialZero" duration-ms="29" started-at="2017-12-14T10:24:49Z" finished-at="2017-12-14T10:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfactorialZero -->
+      </class> <!-- com.final_project.calculator_tobiash.tests.AdvancedCalculatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
