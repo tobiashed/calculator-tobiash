@@ -10,7 +10,7 @@
   <name>calculator-tobiash</name>
   <url>http://maven.apache.org</url>
 
-  <!-- This is my properties -->
+  <!-- These are my properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.11</junit.version>
